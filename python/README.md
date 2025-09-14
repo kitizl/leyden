@@ -21,3 +21,14 @@ Shamelessly stealing this from [Wikipedia](https://en.wikipedia.org/wiki/Static_
 
 
 Note that SSGs written in python already exist, such as [Pelican](https://getpelican.com/). However, I will not be using those as a starting point at all, and will instead work as close to scratch as possible.
+
+## Package/dependency management
+
+I think I will run as close to native/stdlib as possible, but I also want to use this as an opportunity to explore the `uv` toolchain. I'm extremely used to and comfortable with `conda`, but not a huge fan of what Anaconda, the parent company, is up to, so I wanted to try exploring whether `uv` would be a good shout.
+
+As such, the project is contained within the subdirectly `py-leyden`. To run the program just do
+
+```
+uv run py-leyden/main.py
+```
+
