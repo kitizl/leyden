@@ -1,0 +1,33 @@
+Starting goals:
+1. Is able to generate from a markdown file, an HTML file
+2. Is able to link between multiple markdown files
+3. Serve the website on localhost
+
+Current usage is going to look like this. I have a bunch of files in a folder called "content",
+and I will produce the results in a folder called "target" (that's within `~/python` here).
+
+My goal is for you to do,
+
+```
+leyden build
+```
+
+and then it looks through the content/ folder and builds the entire website with HTML and everything
+and then it makes the thing.
+
+```
+leyden server
+```
+
+will then serve the latest updated target things.
+
+
+Tasks:
+- [ ] Implement a markdown to HTML parser
+- [ ] Implement a backend structure to keep track of the HTML files
+- [ ] Create a server on localhost
+- [ ] Serve .html file on localhost
+
+Goals:
+- Templating engine to customize look and feel of website beyond just a couple of words
+- Includes CSS
