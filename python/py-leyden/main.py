@@ -1,5 +1,11 @@
+from utils import mdown_parser, rst_parser
+
 def markdown_to_html(markdown_text : str) -> str:
-    html_text : str = ""
+    html_text : str = mdown_parser.parse_text(markdown_text)
+    return html_text
+
+def rst_to_html(rst_text : str) -> str:
+    html_text : str = rst_parser.parse_text(rst_text)
     return html_text
 
 def html_prettify(text : str) -> str:
